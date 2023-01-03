@@ -3,7 +3,7 @@
 
 const mongoose=require('mongoose');
 
-var mongourl=process.env.url
+var mongourl=process.env.url;
    
 
     mongoose.connect(mongourl,{useUnifiedTopology:true,useNewUrlParser:true})
