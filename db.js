@@ -3,8 +3,8 @@
 
 const mongoose=require('mongoose');
 
-var mongourl="mongodb+srv://Parth:Parthsarthi@cluster0.yjbfn.mongodb.net/foody" 
-   // var mongourl= "mongodb+srv://Parth:Parthsarthi@cluster0.yjbfn.mongodb.net/foody?retryWrites=true&w=majority"
+var mongourl=process.env.url
+   
 
     mongoose.connect(mongourl,{useUnifiedTopology:true,useNewUrlParser:true})
 
